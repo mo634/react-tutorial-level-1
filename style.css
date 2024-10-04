@@ -1,0 +1,10 @@
+/* Some basic CSS */
+h1 {
+    color: blue;
+}
+h1 span{
+    color: red;
+}
+#text {
+    color: green;
+}
