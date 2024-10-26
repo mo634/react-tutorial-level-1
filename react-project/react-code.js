@@ -1,12 +1,32 @@
-// create p element using react method 
-const p = React.createElement("p",null ,"My Name Is Mohamed Mostafa");
+// create h1 
+const heading = React.createElement(
+    "h1",
+    null,
+    "Hello, Welcome!"
+)
 
+// create p 
 
+const paragraph = React.createElement(
+    "p",
+    null,
+    "My Name is Mohamed Mostafa."
+)
 
-// render p element
-const root = ReactDOM.createRoot(document.getElementById('root'));
+// create div(parent)
 
+const parentDiv = React.createElement(
+    "Div",
+    null,
 
-root.render(p)
+    heading,
+    paragraph
+)
 
+// create root 
 
+const root = ReactDOM.createRoot(document.getElementById('root'))
+
+// render phase 
+
+root.render(parent)
