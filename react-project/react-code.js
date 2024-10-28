@@ -30,3 +30,10 @@ const root = ReactDOM.createRoot(document.getElementById('root'))
 // render phase 
 
 root.render(parent)
+
+
+
+const parentDiv = <div>
+    <h1>Hello, Welcome!</h1>
+    <p>My Name is Mohamed Mostafa.</p>
+</div>
