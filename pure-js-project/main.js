@@ -1,11 +1,20 @@
-// create p element 
-const p = document.createElement('p');
 
-// create text node
-const text = document.createTextNode('My Name Is Mohamed Mostafa ');
+function tickWithPureJS() {
+    // create element 
 
-// append text to p
-p.appendChild(text);
+    const element =
+        `
+    <div>
 
-// append p to body
-document.body.appendChild(p)
+        <h1>It is ${new Date().toLocaleTimeString()}.</h1> // get the current time 
+
+    </div>
+    `
+
+    // appent element to the dom 
+    document.getElementById("app1").innerHTML = element
+}
+
+setInterval(tickWithPureJS, 1000)
+
+
