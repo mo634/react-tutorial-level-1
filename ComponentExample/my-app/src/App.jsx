@@ -1,34 +1,15 @@
-import React from 'react'
-import HeaderComponent from './components/HeaderComponent'
-import MainContent from './components/MainContent'
-import Sidebar from './components/SideBar'
-import Footer from './components/Footer'
-
-class App extends React.Component {
+import React, { Component } from 'react'
+import ProjectOne from './components/ProjectOne'
+import ProjectTwo from './components/ProjectTwo'
+import ProjectThree from './components/ProjectThree'
+export default class App extends Component {
     render() {
         return (
-            <div className="App">
-                {/* header  */}
-
-                <HeaderComponent />
-
-
-                {/* content  */}
-
-                <MainContent />
-
-
-                {/* sidebar */}
-
-                <Sidebar />
-
-                {/* footer */}
-
-                <Footer />
-
+            <div>
+                <ProjectOne />
+                <ProjectTwo />
+                <ProjectThree />
             </div>
         )
     }
 }
-
-export default App
