@@ -5,20 +5,11 @@ export default class App extends Component {
     render() {
         return (
             <div className="">
+
                 <Greeting
                     name="mohamed"
+                    age="23"
                 />
-                <Greeting
-                    name="ahmed"
-                />
-                <Greeting
-                    name="amir"
-                />
-                <Greeting
-                    name="omar"
-                />
-
-                <Greeting />
 
             </div>
         )
