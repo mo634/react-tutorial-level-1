@@ -1,9 +1,15 @@
 import React, { Component } from 'react'
+import PropType from 'prop-types'
 
 export default class Greeting extends Component {
     static defaultProps = {
         name: 'unknown'
     }
+    static propTypes = {
+        age: PropType.number,
+        name: PropType.string
+    }
+
     render() {
         return (
             <div className="">
